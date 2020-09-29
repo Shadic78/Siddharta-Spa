@@ -187,6 +187,11 @@
 
   .hero__text-container {
     max-width: 75%;
+    font-size: 1.5em;
+  }
+
+  .hero__button {
+    font-size: 0.6em;
   }
 
   .nav-mobile {
