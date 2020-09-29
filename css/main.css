@@ -1,1 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+/*************
+  Variables
+**************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+/*
+  Hero
+**************************/
+.hero {
+  height: 100vh;
+  font-size: 16px;
+  /*background-image: url('../img/Hero1.jpg');*/
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/Hero1.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -5em;
+}
+
+/*
+  Navbar
+**************************/
+.nav, .nav--transparent {
+  background-color: #826342;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav--transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav ul, .nav--transparent ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+.nav__option, .nav__option--logo, .nav__option--last {
+  font-family: "Montserrat", arial;
+  font-weight: 500;
+  font-size: 1em;
+  color: #ffffff;
+  margin: 0 1.5em;
+}
+
+.nav__option--last {
+  margin-right: 4em;
+}
+
+.nav__option--logo {
+  margin-left: 4rem;
+  font-family: "Rochester", arial;
+  font-size: 2.25em;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
