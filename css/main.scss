@@ -3,10 +3,11 @@
 /*************
   Variables
 **************/
-$nav-background-color: #826342;
 $nav-links-color: #ffffff;
 $logo-font: 'Rochester', arial;
 $general-text-font: 'Montserrat', arial;
+$color-brown: #826342;
+$color-green: #048A81;
 
 * {
   margin: 0;
@@ -19,26 +20,71 @@ $general-text-font: 'Montserrat', arial;
 .hero {
   height: 100vh;
   font-size: 16px;
-  /*background-image: url('../img/Hero1.jpg');*/
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/Hero1.jpg');
-  background-position: center top;
+}
+
+.hero__item {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../img/Hero1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -5em;
 }
 
+.hero__filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.hero__text-container {
+  font-family: $general-text-font;
+  font-size: 2.1em;
+  color: white;
+  text-align: center;
+  max-width: 60%;
+}
+
+.hero__text-container__text {
+  margin-bottom: 1em;
+}
+
+.hero__button {
+  background-color: $color-green;
+  font-size: 0.45em;
+  border: none;
+  padding: .7em 1.1em;
+  color: white;
+}
+
 /*
   Navbar
 **************************/
+.nav--fixed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .nav {
-  background-color: $nav-background-color;
+  background-color: $color-brown;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.nav--transparent {
+.nav-background--transparent {
   @extend .nav;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(165, 86, 86, 0);
+}
+
+.nav-background--normal {
+  @extend .nav;
+  background-color: $color-brown;
 }
 
 .nav ul {
@@ -57,6 +103,11 @@ $general-text-font: 'Montserrat', arial;
   margin: 0 1.5em;
 }
 
+.nav__option a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav__option--last {
   @extend .nav__option;
   margin-right: 4em;
@@ -68,5 +119,93 @@ $general-text-font: 'Montserrat', arial;
   font-family: $logo-font;
   font-size: 2.25em;
   margin-right: auto;
+}
+
+/*
+  Nav mobile
+**************************/
+.nav-mobile {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  font-size: 16px;
+  background-color: $color-green;
+}
+
+.nav-mobile ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.nav-mobile ul li {
+  width: 33%;
+  text-align: center;
+}
+
+.nav-mobile ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-mobile__option {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  color: white;
+}
+
+/*
+  Responsive
+**************************/
+@media screen and (max-width: 845px) {
+  
+  .nav {
+    font-size: 14px;
+  }
+
+  .nav__option--logo {
+    margin-left: 1.5em;
+  }
+
+  .nav__option--last {
+    margin-right: 1.5em;
+  }
+
+  .hero__item {
+    background-position-y: 0;
+  }
+
+}
+
+@media screen and (max-width: 555px) {
+  
+  .nav {
+    margin-top: 1em;
+  }
+
+  .nav__option {
+    display: none;
+  }
+
+  .nav__option--logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero__text-container {
+    max-width: 75%;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
 }
 
