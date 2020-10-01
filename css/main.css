@@ -186,26 +186,32 @@ body {
 
 .section-header__text__column {
   text-align: left;
-  max-width: 33%;
+  width: 33%;
 }
 
 .section-header__text .section-header__text__column:nth-child(1) {
   padding-right: 1em;
 }
 
-.section-header__text div:nth-child(2) {
+.section-header__text .section-header__text__column:nth-child(2) {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
-.section-header__text div:nth-child(3) {
+.section-header__text .section-header__text__column:nth-child(3) {
   padding-left: 1em;
 }
 
 /*
   Responsive
 **************************/
+/**
+  Tablet
+***************/
 @media screen and (max-width: 845px) {
+  /*
+    Nav
+  */
   .nav, .nav-background--transparent, .nav-background--normal {
     font-size: 14px;
   }
@@ -218,11 +224,46 @@ body {
     margin-right: 1.5em;
   }
 
+  /*
+    Hero
+  */
   .hero__item {
     background-position-y: 0;
   }
+
+  /*
+    Section Header
+  */
+  .section-header {
+    padding-left: 2.8em;
+    padding-right: 2.8em;
+  }
+
+  .section-header__line {
+    width: 30%;
+  }
+
+  .section-header__text {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section-header__text__column {
+    width: 50%;
+    text-align: center;
+  }
+
+  .section-header__text__column:nth-child(3) {
+    margin-top: 1.5em;
+  }
 }
+/**
+  Celular
+***************/
 @media screen and (max-width: 555px) {
+  /*
+    Nav
+  */
   .nav, .nav-background--transparent, .nav-background--normal {
     margin-top: 1em;
   }
@@ -236,6 +277,13 @@ body {
     margin: 0 auto;
   }
 
+  .nav-mobile {
+    display: block;
+  }
+
+  /*
+    Hero
+  */
   .hero {
     height: 92vh;
   }
@@ -253,8 +301,53 @@ body {
     font-size: 0.6em;
   }
 
-  .nav-mobile {
-    display: block;
+  /*
+    Section Header
+  */
+  .section-header {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .section-header__title {
+    font-size: 1.3em;
+  }
+
+  .section-header__line {
+    width: 35%;
+    margin-bottom: 1.2em;
+  }
+
+  .section-header__text {
+    flex-direction: column;
+    font-size: 0.9em;
+    text-align: left;
+  }
+
+  .section-header__text__column {
+    width: 100%;
+    text-align: left;
+  }
+
+  .section-header__text .section-header__text__column:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1.5em;
+  }
+
+  .section-header__text .section-header__text__column:nth-child(3) {
+    padding-left: 0;
+  }
+}
+/**
+  Full HD
+***************/
+@media screen and (min-width: 1920px) {
+  /*
+    Hero
+  */
+  .hero, .nav, .nav-background--transparent, .nav-background--normal {
+    font-size: 22px;
   }
 }
 
