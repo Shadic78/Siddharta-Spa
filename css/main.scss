@@ -358,11 +358,21 @@ body {
   Full HD
 ***************/
 @media screen and (min-width: 1920px) {
-  /*
-    Hero
-  */
-  .hero, .nav {
-    font-size: 22px;
+
+  .hero, .nav, .section-header {
+    font-size: 24px;
+  }
+
+}
+
+
+/**
+  4K
+***************/
+@media screen and (min-width: 3840px) {
+
+  .hero, .nav, .section-header {
+    font-size: 46px;
   }
 
 }
