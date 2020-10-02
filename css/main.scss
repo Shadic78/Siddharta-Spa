@@ -218,8 +218,19 @@ body {
 }
 
 /*
-  Responsive
+  Facility carousel
 **************************/
+.facility-carousel-container {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 6.6em;
+  padding-right: 6.6em;
+}
+
+
+/********************************************************
+  Responsive
+**********************************************************/
 
 /**
   Tablet
@@ -271,6 +282,14 @@ body {
 
   .section-header__text__column:nth-child(3) {
     margin-top: 1.5em;
+  }
+
+  /*
+  Facility carousel
+  **************************/
+  .facility-carousel-container {
+    padding-left: 2.8em;
+    padding-right: 2.8em;
   }
 
 }
@@ -360,6 +379,14 @@ body {
 
   .section-header__text .section-header__text__column:nth-child(3) {
     padding-left: 0;
+  }
+
+    /*
+  Facility carousel
+  **************************/
+  .facility-carousel-container {
+    padding-left: 1.7em;
+    padding-right: 1.7em;
   }
 
 }
