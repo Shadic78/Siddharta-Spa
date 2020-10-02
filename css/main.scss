@@ -29,10 +29,21 @@ body {
 .hero__item {
   height: 100vh;
   width: 100%;
-  background-image: url('../img/Hero1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -5em;
+}
+
+.carousel-inner .hero__item:nth-child(1) {
+  background-image: url('../img/Hero1.jpg');
+}
+
+.carousel-inner .hero__item:nth-child(2) {
+  background-image: url('../img/Hero2.jpg');
+}
+
+.carousel-inner .hero__item:nth-child(3) {
+  background-image: url('../img/Hero3.jpg');
 }
 
 .hero__filter {
