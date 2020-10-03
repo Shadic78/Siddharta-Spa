@@ -229,6 +229,87 @@ body {
   padding-right: 6.6em;
 }
 
+/*
+  Section Cards
+**************************/
+.section-card, .section-card--secondary, .section-card--primary {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  color: white;
+}
+
+.section-card--primary {
+  background-color: #826342;
+}
+
+.section-card--secondary {
+  background-color: #048A81;
+}
+
+.section-card__text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.section-card__image-container {
+  width: 50%;
+  background-color: red;
+}
+
+.section-card__text-container__text {
+  max-width: 70%;
+}
+
+.section-card__text-container__text__title {
+  font-family: "Rochester", arial;
+  font-size: 2.8em;
+}
+
+.section-card__text-container__text__line {
+  border-top: solid 3px white;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  width: 32%;
+}
+
+.section-card__text-container__text a {
+  text-decoration: none;
+}
+
+.section-card__text-container__text__button, .section-card__text-container__text__button--secondary, .section-card__text-container__text__button--primary {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+  border: 3px solid white;
+  padding: 0.3em 1.2em;
+  margin-top: 1.2em;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+.section-card__text-container__text__button--primary:hover {
+  background-color: white;
+  color: #826342;
+}
+
+.section-card__text-container__text__button--secondary:hover {
+  background-color: white;
+  color: #048A81;
+}
+
+.section-card__image-container {
+  overflow: hidden;
+}
+
+.section-card__image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /********************************************************
   Responsive
 **********************************************************/
