@@ -282,6 +282,7 @@ body {
 
 .section-card__text-container__text__button, .section-card__text-container__text__button--secondary, .section-card__text-container__text__button--primary {
   display: inline-block;
+  width: fit-content;
   text-decoration: none;
   font-size: 0.9em;
   border: 3px solid white;
@@ -303,6 +304,7 @@ body {
 
 .section-card__image-container {
   overflow: hidden;
+  height: auto;
 }
 
 .section-card__image-container img {
@@ -478,10 +480,55 @@ body {
 
   /*
   Facility carousel
-  **************************/
+  */
   .facility-carousel-container {
     padding-left: 1.7em;
     padding-right: 1.7em;
+  }
+
+  /*
+    Section cards
+  */
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: inline-block;
+  }
+
+  .section-card, .section-card--primary, .section-card--secondary {
+    flex-direction: column;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .section-card__text-container {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    width: 100%;
+  }
+
+  .section-card__text-container__text__title {
+    text-align: center;
+  }
+
+  .section-card__text-container__text__line {
+    margin: 1.2em auto;
+  }
+
+  .section-card__image-container {
+    width: 100%;
+  }
+
+  .section-card__image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-card__text-container__text__button, .section-card__text-container__text__button--primary, .section-card__text-container__text__button--secondary {
+    margin: 2.5em auto;
+    padding: 0.5em 2em;
   }
 }
 /**
