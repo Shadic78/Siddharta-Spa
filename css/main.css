@@ -367,10 +367,26 @@ body {
 
   /*
   Facility carousel
-  **************************/
+  */
   .facility-carousel-container {
     padding-left: 2.8em;
     padding-right: 2.8em;
+  }
+
+  /*
+    Section cards
+  */
+  .section-card, .section-card--primary, .section-card--secondary {
+    height: 50vh;
+    font-size: 16px;
+  }
+
+  .section-card__text-container__text__title {
+    font-size: 3em;
+  }
+
+  .section-card__text-container__text {
+    max-width: 80%;
   }
 }
 /**
