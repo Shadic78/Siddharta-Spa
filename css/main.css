@@ -551,7 +551,7 @@ body {
   Full HD
 ***************/
 @media screen and (min-width: 1920px) {
-  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container {
+  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container, .section-card, .section-card--primary, .section-card--secondary {
     font-size: 24px;
   }
 }
@@ -559,7 +559,7 @@ body {
   4K
 ***************/
 @media screen and (min-width: 3840px) {
-  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container {
+  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container, .section-card, .section-card--primary, .section-card--secondary {
     font-size: 46px;
   }
 
