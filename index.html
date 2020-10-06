@@ -13,10 +13,10 @@
         <nav class="nav-background--transparent">
             <ul>
                 <li class="nav__option--logo"><a href="#">Siddharta Spa</a></li>
-                <li class="nav__option"><a href="">Inicio</a></li>
-                <li class="nav__option"><a href="">Servicios</a></li>
-                <li class="nav__option"><a href="">Promociones</a></li>
-                <li class="nav__option--last"><a href="">Agendar una cita</a></li>
+                <li class="nav__option"><a href="#">Inicio</a></li>
+                <li class="nav__option"><a href="#Servicios">Servicios</a></li>
+                <li class="nav__option"><a href="#Promociones">Promociones</a></li>
+                <li class="nav__option--last"><a href="#AgendarCita">Agendar una cita</a></li>
             </ul>
         </nav>
     </header>
@@ -66,9 +66,9 @@
                         "A veces es necesario tomarse un tiempo para
                         relajarse y renovarse"
                     </div>
-                    <button class="hero__button">
+                    <a class="hero__button" href="#AgendarCita">
                         Agenda una cita
-                    </button>
+                    </a>
                 </div>
             </div>
           </div>
@@ -76,11 +76,11 @@
             <div class="hero__filter">
                 <div class="hero__text-container">
                     <div class="hero__text-container__text">
-                        "*Frase pendiente*"
+                        "El signo más evidente de que se ha encontrado la verdad es la paz interior"
                     </div>
-                    <button class="hero__button">
+                    <a class="hero__button" href="#AgendarCita">
                         Agenda una cita
-                    </button>
+                    </a>
                 </div>
             </div>
           </div>
@@ -88,11 +88,11 @@
             <div class="hero__filter">
                 <div class="hero__text-container">
                     <div class="hero__text-container__text">
-                        "*Frase pendiente*"
+                        "La paz comienza con una sonrisa"
                     </div>
-                    <button class="hero__button">
+                    <a class="hero__button" href="#AgendarCita">
                         Agenda una cita
-                    </button>
+                    </a>
                 </div>
             </div>
           </div>
@@ -160,7 +160,7 @@
           </div>
       </div>
 
-      <div class="section-header">
+      <div class="section-header" id="Promociones">
         <div class="section-header__title">
             Nuestras promociones
         </div>
@@ -201,7 +201,7 @@
         </a>
       </div>
 
-      <div class="section-header">
+      <div class="section-header" id="Servicios">
         <div class="section-header__title">
             Nuestros servicios
         </div>
@@ -339,7 +339,7 @@
         </a>
       </div>
 
-      <div class="section-header">
+      <div class="section-header" id="AgendarCita">
         <div class="section-header__title">
             Agenda una cita con nosotros
         </div>
@@ -396,6 +396,84 @@
             </div>
         </div>
       </div>
+
+      <footer class="footer">
+          <div class="footer__top">
+            <div class="footer__top__row--center">
+                <div class="footer__logo">
+                    Siddharta Spa
+                </div>
+            </div>
+
+            <div class="footer__top__row">
+                <div class="footer__top__row__title">
+                    Contáctanos
+                </div>
+                <div class="footer__top__row__line"></div>
+                <div class="footer_top__row__content">     
+                    <ul class="footer__top__row__list">
+                        <li>
+                            <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
+                                <path
+                                    d="M4.56485 0C2.03612 0 0 2.03612 0 4.56484V20.4351C0 22.9639 2.03612 25 4.56485 25H13.1664V15.2265H10.5821V11.7078H13.1664V8.70156C13.1664 6.33969 14.6934 4.17109 18.211 4.17109C19.6352 4.17109 20.6883 4.30782 20.6883 4.30782L20.6055 7.59376C20.6055 7.59376 19.5314 7.58361 18.3594 7.58361C17.0909 7.58361 16.8875 8.16806 16.8875 9.13831V11.7078H20.7062L20.5399 15.2266H16.8875V25H20.4352C22.9639 25 25 22.9639 25 20.4352V4.56487C25 2.03615 22.9639 2.5e-05 20.4352 2.5e-05L4.56485 0Z"
+                                />
+                            </svg>
+                            <span>
+                                Siddharta Spa
+                            </span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
+                                <path
+                                    d="M14.0004 9.94413C11.5633 9.94413 9.57442 11.9915 9.57442 14.5003C9.57442 17.0091 11.5633 19.0564 14.0004 19.0564C16.4375 19.0564 18.4264 17.0091 18.4264 14.5003C18.4264 11.9915 16.4375 9.94413 14.0004 9.94413ZM27.275 14.5003C27.275 12.6136 27.2916 10.7439 27.1887 8.86064C27.0858 6.67314 26.601 4.73173 25.0471 3.13212C23.4899 1.52909 21.6072 1.03349 19.4822 0.92753C17.6494 0.821573 15.8332 0.838663 14.0037 0.838663C12.1709 0.838663 10.3547 0.821573 8.52521 0.92753C6.40021 1.03349 4.51427 1.53251 2.96036 3.13212C1.40314 4.73515 0.921691 6.67314 0.818761 8.86064C0.715831 10.7474 0.732433 12.617 0.732433 14.5003C0.732433 16.3836 0.715831 18.2566 0.818761 20.1399C0.921691 22.3274 1.40646 24.2688 2.96036 25.8684C4.51759 27.4715 6.40021 27.9671 8.52521 28.073C10.358 28.179 12.1742 28.1619 14.0037 28.1619C15.8365 28.1619 17.6527 28.179 19.4822 28.073C21.6072 27.9671 23.4932 27.4681 25.0471 25.8684C26.6043 24.2654 27.0858 22.3274 27.1887 20.1399C27.2949 18.2566 27.275 16.387 27.275 14.5003ZM14.0004 21.5105C10.2318 21.5105 7.19044 18.3797 7.19044 14.5003C7.19044 10.6209 10.2318 7.49003 14.0004 7.49003C17.769 7.49003 20.8104 10.6209 20.8104 14.5003C20.8104 18.3797 17.769 21.5105 14.0004 21.5105ZM21.0893 8.84013C20.2094 8.84013 19.4988 8.10868 19.4988 7.20292C19.4988 6.29716 20.2094 5.56571 21.0893 5.56571C21.9692 5.56571 22.6797 6.29716 22.6797 7.20292C22.68 7.418 22.639 7.63101 22.5592 7.82977C22.4793 8.02853 22.3622 8.20912 22.2145 8.3612C22.0667 8.51329 21.8913 8.63387 21.6982 8.71605C21.5051 8.79823 21.2982 8.8404 21.0893 8.84013Z"
+                                />
+                            </svg>
+                            <span>
+                                @siddharthaspa
+                            </span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
+                                <path
+                                    d="M23.1303 5.7811C19.3906 -0.000190735 11.7554 -1.71895 5.83426 1.87482C0.0688934 5.4686 -1.80095 13.2812 1.93874 19.0625L2.25038 19.5312L1.00382 24.2187L5.67843 22.9687L6.1459 23.2812C8.17157 24.375 10.3531 25 12.5345 25C14.8719 25 17.2092 24.375 19.2348 23.125C25.0002 19.375 26.7142 11.7186 23.1303 5.7811ZM19.8581 17.8124C19.2348 18.75 18.4557 19.375 17.365 19.5312C16.7417 19.5312 15.9626 19.8437 12.8462 18.5937C10.1972 17.3437 8.01574 15.3124 6.45754 12.9687C5.52261 11.8749 5.05515 10.4686 4.89933 9.06238C4.89933 7.81237 5.36679 6.71861 6.1459 5.93735C6.45754 5.62485 6.76918 5.4686 7.08082 5.4686H7.85992C8.17157 5.4686 8.48321 5.4686 8.63903 6.09361C8.95067 6.87486 9.72977 8.74988 9.72977 8.90613C9.88559 9.06238 9.88559 9.37488 9.72977 9.53113C9.88559 9.84364 9.72977 10.1561 9.57395 10.3124C9.41813 10.4686 9.26231 10.7811 9.10649 10.9374C8.79485 11.0936 8.63903 11.4061 8.79485 11.7186C9.41813 12.6562 10.1972 13.5937 10.9763 14.3749C11.9113 15.1562 12.8462 15.7812 13.9369 16.2499C14.2486 16.4062 14.5602 16.4062 14.716 16.0937C14.8719 15.7812 15.651 14.9999 15.9626 14.6874C16.2742 14.3749 16.4301 14.3749 16.7417 14.5312L19.2348 15.7812C19.5465 15.9374 19.8581 16.0937 20.0139 16.2499C20.1698 16.7187 20.1698 17.3437 19.8581 17.8124Z"
+                                />
+                            </svg>
+                            <span>
+                                + 52 (999) 1 23 43 45
+                            </span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__icon">
+                                <path
+                                    d="M25 16.625V2.375C25 1.06083 24.0153 0 22.7954 0H2.20459C0.984715 0 0 1.06083 0 2.375V16.625C0 17.9392 0.984715 19 2.20459 19H22.7954C24.0153 19 25 17.9392 25 16.625ZM23.0747 2.20083C23.5597 2.72333 23.2951 3.26167 23.0306 3.53083L17.0635 9.42083L22.7954 15.8492C22.9718 16.0708 23.0894 16.4192 22.8836 16.6567C22.6925 16.91 22.2516 16.8942 22.0606 16.7358L15.6379 10.83L12.4927 13.9175L9.36214 10.83L2.93945 16.7358C2.74838 16.8942 2.30747 16.91 2.1164 16.6567C1.91064 16.4192 2.02822 16.0708 2.20459 15.8492L7.93651 9.42083L1.96943 3.53083C1.70488 3.26167 1.44033 2.72333 1.92534 2.20083C2.41035 1.67833 2.91005 1.93167 3.32158 2.31167L12.4927 10.2917L21.6784 2.31167C22.0899 1.93167 22.5897 1.67833 23.0747 2.20083Z"
+                                />
+                            </svg>
+                            <span>
+                                info@siddharta.com.mx
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__top__row">
+                <div class="footer__top__row__title">
+                    Horario
+                </div>
+                <div class="footer__top__row__line"></div>
+                <div class="footer_top__row__content">
+                    Lunes a sabado: <br />
+                    10:30 am - 9:00 pm <br />
+                    <br />
+                    Domingo: <br />
+                    10:00 am - 6:00 pm <br />                    
+                </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            © Copyright Siddharta Spa. Todos los derechos reservados.
+          </div>
+      </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
