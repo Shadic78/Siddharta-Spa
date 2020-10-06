@@ -174,8 +174,7 @@ body {
   width: 100%;
   font-size: 18px;
   font-family: "Montserrat", arial;
-  padding: 3.8em 6.6em;
-  padding-top: 4em;
+  padding: 6em 6.6em;
   text-align: center;
 }
 
@@ -187,36 +186,55 @@ body {
   width: 20%;
   border-top: 3px solid #826342;
   margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin-top: 0.9em;
+  margin-bottom: 1.8em;
 }
 
-.section-header__text {
+.section-header__text, .section-header__text--contact-info {
   display: flex;
   justify-content: space-between;
 }
 
-.section-header__text > p {
+.section-header__text--contact-info {
+  padding-top: 3.65em;
+}
+
+.section-header__text > p, .section-header__text--contact-info > p {
   text-align: center;
   margin: 0 auto;
 }
 
-.section-header__text__column {
+.section-header__text__column, .section-header__text__column--center-text {
   text-align: left;
   width: 33%;
 }
 
-.section-header__text .section-header__text__column:nth-child(1) {
+.section-header__text__column--center-text {
+  text-align: center;
+}
+
+.section-header__text .section-header__text__column:nth-child(1), .section-header__text--contact-info .section-header__text__column:nth-child(1), .section-header__text .section-header__text__column--center-text:nth-child(1), .section-header__text--contact-info .section-header__text__column--center-text:nth-child(1) {
   padding-right: 1em;
 }
 
-.section-header__text .section-header__text__column:nth-child(2) {
+.section-header__text .section-header__text__column:nth-child(2), .section-header__text--contact-info .section-header__text__column:nth-child(2), .section-header__text .section-header__text__column--center-text:nth-child(2), .section-header__text--contact-info .section-header__text__column--center-text:nth-child(2) {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
-.section-header__text .section-header__text__column:nth-child(3) {
+.section-header__text .section-header__text__column:nth-child(3), .section-header__text--contact-info .section-header__text__column:nth-child(3), .section-header__text .section-header__text__column--center-text:nth-child(3), .section-header__text--contact-info .section-header__text__column--center-text:nth-child(3) {
   padding-left: 1em;
+}
+
+.contant-info-icon {
+  fill: #826342;
+  margin-bottom: 1em;
+  width: 4.2em;
+}
+
+.contact-info-icon--phone {
+  fill: #826342;
+  width: 2em;
 }
 
 /*
@@ -361,17 +379,17 @@ body {
     width: 30%;
   }
 
-  .section-header__text {
+  .section-header__text, .section-header__text--contact-info {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .section-header__text__column {
+  .section-header__text__column, .section-header__text__column--center-text {
     width: 50%;
     text-align: center;
   }
 
-  .section-header__text__column:nth-child(3) {
+  .section-header__text__column:nth-child(3), .section-header__text__column--center-text:nth-child(3) {
     margin-top: 1.5em;
   }
 
@@ -460,29 +478,29 @@ body {
     margin-bottom: 1.2em;
   }
 
-  .section-header__text {
+  .section-header__text, .section-header__text--contact-info {
     flex-direction: column;
     font-size: 0.8em;
     text-align: left;
   }
 
-  .section-header__text > p {
+  .section-header__text > p, .section-header__text--contact-info > p {
     text-align: justify;
     margin: 0;
   }
 
-  .section-header__text__column {
+  .section-header__text__column, .section-header__text__column--center-text {
     width: 100%;
     text-align: left;
   }
 
-  .section-header__text .section-header__text__column:nth-child(2) {
+  .section-header__text .section-header__text__column:nth-child(2), .section-header__text--contact-info .section-header__text__column:nth-child(2), .section-header__text .section-header__text__column--center-text:nth-child(2), .section-header__text--contact-info .section-header__text__column--center-text:nth-child(2) {
     padding-left: 0;
     padding-right: 0;
     margin-top: 1.5em;
   }
 
-  .section-header__text .section-header__text__column:nth-child(3) {
+  .section-header__text .section-header__text__column:nth-child(3), .section-header__text--contact-info .section-header__text__column:nth-child(3), .section-header__text .section-header__text__column--center-text:nth-child(3), .section-header__text--contact-info .section-header__text__column--center-text:nth-child(3) {
     padding-left: 0;
   }
 
@@ -546,21 +564,42 @@ body {
   .section-card__text-container__text__button--secondary {
     order: 3;
   }
+
+  /*
+    Contact info
+  */
+  .section-header__text--contact-info {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .section-header__text__column--center-text {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
 }
 /**
   Full HD
 ***************/
 @media screen and (min-width: 1920px) {
-  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container, .section-card, .section-card--primary, .section-card--secondary {
+  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container {
     font-size: 24px;
+  }
+
+  .section-card, .section-card--primary, .section-card--secondary {
+    font-size: 26px;
   }
 }
 /**
   4K
 ***************/
 @media screen and (min-width: 3840px) {
-  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container, .section-card, .section-card--primary, .section-card--secondary {
-    font-size: 46px;
+  .hero, .nav, .nav-background--transparent, .nav-background--normal, .section-header, .facility-carousel-container {
+    font-size: 48px;
+  }
+
+  .section-card, .section-card--primary, .section-card--secondary {
+    font-size: 52px;
   }
 
   .section-header__line {
