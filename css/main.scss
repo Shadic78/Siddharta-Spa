@@ -12,6 +12,7 @@ $color-green: #048A81;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -91,18 +92,24 @@ a {
 /*
   Navbar
 **************************/
+.nav {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.nav--normal {
+  @extend .nav;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .nav--fixed {
+  @extend .nav;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   z-index: 100;
-}
-
-.nav {
-  background-color: $color-brown;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .nav-background--transparent {
@@ -113,6 +120,8 @@ a {
 .nav-background--normal {
   @extend .nav;
   background-color: $color-brown;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav ul {
@@ -220,6 +229,12 @@ a {
   font-family: $general-text-font;
   padding: 6em 6.6em;
   text-align: center;
+}
+
+.section-header--servicios {
+  @extend .section-header;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .section-header__title {
@@ -478,6 +493,99 @@ a {
 .map {
   width: 100%;
   height: 90vh;
+}
+
+/*
+  Services cards
+**************************/
+.card__container {
+  font-size: 18px;
+  margin-bottom: 3em;
+}
+
+.card {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background: white;
+  font-family: $general-text-font;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+  transition: all ease .3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2); 
+  transform: translateY(-1em);   
+}
+
+.card__img {
+  width: 100%;
+  clip-path: circle(80% at 50% 16%);
+}
+
+.card__body {
+  padding: 1.4em;
+  padding-top: .7em;
+  color: #5c5757;
+  text-align: left;
+}
+
+.card__title {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: .7em;
+}
+
+.card__icons-container {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .9em;
+}
+
+.card__icons-container__row {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+.card__icons-container__row--right {
+  @extend .card__icons-container__row;
+  justify-content: flex-end;
+}
+
+.card__icon {
+  fill: black;
+  width: 1.5em;
+  margin-right: .2em;
+}
+
+.agendar-cita-btn {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  padding: .6em 1.4em;
+  color: white;
+  background-color: $color-green;
+  transition: all ease .4s;
+  margin-bottom: 2.1em;
+}
+
+.agendar-cita-btn:hover {
+  text-decoration: none;
+  color: #cfd6d8;
+  background-color: #025b55;
+  cursor: pointer;
 }
 
 /********************************************************
@@ -779,6 +887,13 @@ a {
     height: 80vh;
   }
 
+  /*
+    Services cards
+  */
+  .card {
+    font-size: 16px;
+  }
+
 }
 
 /**
@@ -786,7 +901,7 @@ a {
 ***************/
 @media screen and (min-width: 1920px) {
 
-  .hero, .nav, .section-header, .facility-carousel-container, .footer {
+  .hero, .nav, .section-header, .facility-carousel-container, .footer, .card__container {
     font-size: 24px;
   }
 
@@ -805,6 +920,15 @@ a {
     font-size: 24px;
   }
 
+  .card {
+    font-size: 24px;
+    width: 85%;
+  }
+
+  .agendar-cita-btn {
+    font-size: 28px;
+  }
+
 }
 
 
@@ -813,7 +937,7 @@ a {
 ***************/
 @media screen and (min-width: 3840px) {
 
-  .hero, .nav, .section-header, .facility-carousel-container, .footer {
+  .hero, .nav, .section-header, .facility-carousel-container, .footer, .card, .card__container {
     font-size: 48px;
   }
 
@@ -831,6 +955,10 @@ a {
 
   .map h6 {
     font-size: 44px;
+  }
+
+  .agendar-cita-btn {
+    font-size: 54px;
   }
 
 }
