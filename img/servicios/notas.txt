@@ -1,1 +1,2 @@
+Para mantener las proporciones:
 Ancho = Alto / 0.94
