@@ -545,7 +545,7 @@ a {
   text-decoration: none;
   margin: 0 auto;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   padding: 0.6em 1.4em;
   color: white;
   background-color: #048A81;
@@ -862,6 +862,10 @@ a {
   .card {
     font-size: 16px;
   }
+
+  .agendar-cita-btn {
+    font-size: 18px;
+  }
 }
 /**
   Full HD
@@ -892,7 +896,7 @@ a {
   }
 
   .agendar-cita-btn {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 /**
@@ -920,7 +924,7 @@ a {
   }
 
   .agendar-cita-btn {
-    font-size: 54px;
+    font-size: 52px;
   }
 }
 
