@@ -230,7 +230,7 @@ a {
 
 .section-header__line {
   width: 20%;
-  border-top: 3px solid #826342;
+  border-top: 0.17em solid #826342;
   margin: 0 auto;
   margin-top: 0.9em;
   margin-bottom: 1.8em;
@@ -338,7 +338,7 @@ a {
 }
 
 .section-card__text-container__text__line {
-  border-top: solid 3px white;
+  border-top: solid 0.17em white;
   margin-top: 0.5em;
   margin-bottom: 1em;
   width: 32%;
@@ -353,7 +353,7 @@ a {
   width: fit-content;
   text-decoration: none;
   font-size: 0.9em;
-  border: 3px solid white;
+  border: 0.17em solid white;
   padding: 0.3em 1.2em;
   margin-top: 1.2em;
   color: white;
@@ -916,17 +916,12 @@ a {
 @media screen and (min-width: 3840px) {
   .hero, .nav, .nav--normal, .nav--fixed, .nav-background--transparent, .nav-background--normal, .section-header, .section-header--servicios, .facility-carousel-container, .footer, .card, .card__container {
     /*font-size: 48px;*/
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .section-card, .section-card--primary, .section-card--secondary {
     /*font-size: 52px;*/
-    font-size: 60px;
-  }
-
-  .section-header__line {
-    /*border-width: 8px;*/
-    border-width: 12px;
+    font-size: 56px;
   }
 
   .map {
@@ -940,7 +935,31 @@ a {
 
   .agendar-cita-btn {
     /*font-size: 52px;*/
-    font-size: 56px;
+    font-size: 54px;
+  }
+}
+/**
+  5K
+***************/
+@media screen and (min-width: 5120px) {
+  .hero, .nav, .nav--normal, .nav--fixed, .nav-background--transparent, .nav-background--normal, .section-header, .section-header--servicios, .facility-carousel-container, .footer, .card, .card__container {
+    /*font-size: 48px;*/
+    font-size: 66px;
+  }
+
+  .section-card, .section-card--primary, .section-card--secondary {
+    /*font-size: 52px;*/
+    font-size: 70px;
+  }
+
+  .map h6 {
+    /*font-size: 44px;*/
+    font-size: 52px;
+  }
+
+  .agendar-cita-btn {
+    /*font-size: 52px;*/
+    font-size: 70px;
   }
 }
 

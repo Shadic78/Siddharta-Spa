@@ -243,7 +243,7 @@ a {
 
 .section-header__line {
   width: 20%;
-  border-top: 3px solid $color-brown;
+  border-top: .17em solid $color-brown;
   margin: 0 auto;
   margin-top: .9em;
   margin-bottom: 1.8em;
@@ -356,7 +356,7 @@ a {
 }
 
 .section-card__text-container__text__line {
-  border-top: solid 3px white;
+  border-top: solid .17em white;
   margin-top: .5em;
   margin-bottom: 1em;
   width: 32%;
@@ -371,7 +371,7 @@ a {
   width: fit-content;
   text-decoration: none;
   font-size: .9em;
-  border: 3px solid white;
+  border: .17em solid white;
   padding: .3em 1.2em;
   margin-top: 1.2em;
   color: white;
@@ -954,17 +954,12 @@ a {
 
   .hero, .nav, .section-header, .facility-carousel-container, .footer, .card, .card__container {
     /*font-size: 48px;*/
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .section-card {
     /*font-size: 52px;*/
-    font-size: 60px;
-  }
-
-  .section-header__line {
-    /*border-width: 8px;*/
-    border-width: 12px;
+    font-size: 56px;
   }
 
   .map {
@@ -978,8 +973,34 @@ a {
 
   .agendar-cita-btn {
     /*font-size: 52px;*/
-    font-size: 56px;
+    font-size: 54px;
   }
 
+}
+
+/**
+  5K
+***************/
+@media screen and (min-width: 5120px) {
+  .hero, .nav, .section-header, .facility-carousel-container, .footer, .card, .card__container {
+    /*font-size: 48px;*/
+    font-size: 66px;
+  }
+
+  .section-card {
+    /*font-size: 52px;*/
+    font-size: 70px;
+  }
+
+  .map h6 {
+    /*font-size: 44px;*/
+    font-size: 52px;
+  }
+
+  .agendar-cita-btn {
+    /*font-size: 52px;*/
+    font-size: 70px;
+  }
+  
 }
 
