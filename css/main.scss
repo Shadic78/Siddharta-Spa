@@ -9,6 +9,10 @@ $general-text-font: 'Montserrat', arial;
 $color-brown: #826342;
 $color-green: #048A81;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
